@@ -8,7 +8,7 @@ export const BookDetails = () => {
   const [book, setBook] = useState([]);
 
   useEffect(() => {
-    fetch('https://vane-bookish-api.herokuapp.com/books/book/3')
+    fetch(`https://vane-bookish-api.herokuapp.com/books/book/${bookID}`)
       .then((response) => response.json())
       .then((json) => {
         setBook(json)

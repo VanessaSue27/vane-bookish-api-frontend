@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const AuthorBooks = ({ books }) => {
   return (
     <section>
       {books.map((book) => (
-        <div key={book.bookID}>
+        <Link to={`/books/${book.bookID}`}>
           <p>{book.title}</p>
-        </div>
+        </Link>
       ))}
     </section>
   );
