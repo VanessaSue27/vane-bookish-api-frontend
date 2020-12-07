@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      The beginning of Vane Bookish App! Exciting!
     </div>
-  )
-}
+  );
+};
