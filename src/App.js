@@ -7,6 +7,8 @@ import { BookDetails } from './pages/BookDetails';
 import { TopRated } from './pages/TopRated';
 import { ReviewersChoice } from './pages/ReviewersChoice';
 import { QuickRead } from './pages/QuickRead';
+import { Documentation } from './pages/Documentation';
+import { SearchAuthor } from './pages/SearchAuthor';
 
 export const App = () => {
   return (
@@ -35,11 +37,16 @@ export const App = () => {
             <QuickRead />
           </Route>
 
+          <Route path="/documentation">
+            <Documentation />
+          </Route>
+
+          <Route path="/search">
+            <SearchAuthor />
+          </Route>
+
         </Switch>
       </main>
     </BrowserRouter>
   )
 };
-
-// Implement search by author field: maybe in BooksList component: have a text input to save the author entered by user
-// save that locally and setbooks to the result of search (instead of the original setBoooks with 50 items).
