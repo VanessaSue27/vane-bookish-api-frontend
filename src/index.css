@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+nav {
+  border: 2px solid tomato;
+}
+
+.book-card {
+  border: 2px solid orange;
+}
