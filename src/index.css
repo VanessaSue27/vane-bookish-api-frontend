@@ -133,7 +133,6 @@ main {
 
 /*Single book section styling*/
 .single-book-section {
-  height: calc(100vh - (100px + 410px));
   background-color: #f3f0ef;
   padding-bottom: 60px;
 }
@@ -162,6 +161,7 @@ main {
   margin-top: 40px;
   margin-left: 40px;
   background-color: white;
+  margin-bottom: 40px;
 }
 
 .book-image {
