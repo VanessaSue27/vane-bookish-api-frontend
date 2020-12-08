@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { AuthorBooks } from '../components/AuthorBooks';
+import { SorryNotFound } from '../components/SorryNotFound';
 
 export const SearchAuthor = () => {
   const [author, setAuthor] = useState('');
@@ -39,7 +40,7 @@ export const SearchAuthor = () => {
         <button type="submit" onClick={handleSubmit}>SEARCH</button>
       </form>
 
-      {consoleError ? <h1>Sorry!</h1> : <AuthorBooks books={books} />}
+      {consoleError ? <SorryNotFound /> : <AuthorBooks books={books} />}
     </>
   );
 };
