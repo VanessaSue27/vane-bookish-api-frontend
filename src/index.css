@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
+  height: 100%;
 }
 
 /* Navigation Bar styling */
@@ -128,6 +129,59 @@ main {
 .book-author {
   color: #76323f;
   text-decoration: underline;
+}
+
+/*Single book section styling*/
+.single-book-section {
+  height: calc(100vh - (100px + 410px));
+  background-color: #f3f0ef;
+  padding-bottom: 60px;
+}
+
+.single-book-section a {
+  background-color: #76323f;
+  color: white;
+  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.single-book-section a:hover {
+  color: #e8e3e2;
+}
+
+.back-link {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.book-data-container {
+  display: flex;
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: white;
+}
+
+.book-image {
+  width: 800px;
+}
+
+.book-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.book-data-text {
+  padding: 10px 30px;
+  width: 40%;
+}
+
+.book-data-text p {
+  color: #76323f;
+  font-size: 15px;
 }
 
 /*Media Queries*/
