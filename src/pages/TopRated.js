@@ -14,13 +14,16 @@ export const TopRated = () => {
 
   return (
     <>
-      <h1>These Books have been rated 4+ by our Readers:</h1>
-      <section>
+      <div className="subtitles-container">
+        <h1 className="books-subtitle">Top Rated</h1>
+        <h2 className="second-subtitle">These books have received a 4+ rating from our readers</h2>
+      </div>
+      <section className="books-list">
         {books.map((book) => (
           <div className="book-card" key={book.bookID}>
             <Link to={`/books/${book.bookID}`}>
-              <p>{book.title}</p>
-              <p>{book.authors}</p>
+              <p className="book-title">{book.title}</p>
+              <p className="book-author">{book.authors}</p>
             </Link>
           </div>
         ))}
