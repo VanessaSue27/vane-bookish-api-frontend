@@ -41,6 +41,7 @@ nav a:hover, .active {
   background-size: cover;
   text-align: center;
   color: white;
+  border-bottom: 8px solid #76323f;
 }
 
 .intro-text {
@@ -65,13 +66,69 @@ nav a:hover, .active {
   padding: 15px 6px;
 }
 
-
-
-/* Extra stuff */
-.book-card {
-  border: 2px solid orange;
+/* Books List styling */
+main {
+  background-color: #f3f0ef;
 }
 
+.books-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.subtitles-container {
+  width: 88%;
+  margin: auto;
+}
+
+.books-subtitle {
+  font-family: 'PT Serif', serif;
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.second-subtitle {
+  font-size: 16px;
+  color: #939191;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+/*Book Cards styling*/
+.book-card {
+  border-bottom: 6px solid #76323f;
+  background-color: white;
+  width: 25%;
+  max-width: 280px;
+  margin: 0 10px 30px 10px;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 8px;
+}
+
+.book-card:hover {
+  background-color: #e8e3e2;
+}
+
+.book-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-author {
+  color: #76323f;
+  text-decoration: underline;
+}
 
 /*Media Queries*/
 @media (max-width: 1299px) {

@@ -17,12 +17,16 @@ export const BooksList = () => {
   // map over the books array we got in response to show them on browser
   return (
     <>
-      <section>
+      <div className="subtitles-container">
+        <h1 className="books-subtitle">Books</h1>
+        <h2 className="second-subtitle">Top Reads Available Right Now</h2>
+      </div>
+      <section className="books-list">
         {books.map((book) => (
           <div className="book-card" key={book.bookID}>
             <Link to={`/books/${book.bookID}`}>
-              <p>{book.title}</p>
-              <p>{book.authors}</p>
+              <p className="book-title">{book.title}</p>
+              <p className="book-author">{book.authors}</p>
             </Link>
           </div>
         ))}
