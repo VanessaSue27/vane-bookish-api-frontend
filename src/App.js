@@ -9,13 +9,14 @@ import { ReviewersChoice } from './pages/ReviewersChoice';
 import { QuickRead } from './pages/QuickRead';
 import { Documentation } from './pages/Documentation';
 import { SearchAuthor } from './pages/SearchAuthor';
+import { TopImage } from './components/TopImage';
 
 export const App = () => {
   return (
     <BrowserRouter>
+      <Nav />
+      <TopImage />
       <main>
-        <Nav />
-
         <Switch>
           <Route path="/" exact>
             <BooksList />

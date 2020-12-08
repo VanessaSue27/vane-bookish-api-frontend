@@ -1,32 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Nav = () => {
   return (
     <nav>
-      <Link to="/">
-        <h3>Vane&apos;s Bookish App</h3>
-      </Link>
+      <NavLink to="/">
+        Vane&apos;s Bookish App
+      </NavLink>
 
-      <Link to="/search">
-        <h3>Search by Author</h3>
-      </Link>
+      <NavLink to="/search">
+        Search by Author
+      </NavLink>
 
-      <Link to="/top-rated">
-        <h3>Top Rated Books</h3>
-      </Link>
+      <NavLink to="/top-rated">
+        Top Rated Books
+      </NavLink>
 
-      <Link to="/reviewers-choice">
-        <h3>Reviewer&apos;s Choice</h3>
-      </Link>
+      <NavLink to="/reviewers-choice">
+        Reviewer&apos;s Choice
+      </NavLink>
 
-      <Link to="/quick-read">
-        <h3>Quick Read</h3>
-      </Link>
+      <NavLink to="/quick-read">
+        Quick Read
+      </NavLink>
 
-      <Link to="/documentation">
-        <h3>Bookish API Documentation</h3>
-      </Link>
+      <NavLink to="/documentation">
+        Bookish API Documentation
+      </NavLink>
     </nav>
   );
 };
