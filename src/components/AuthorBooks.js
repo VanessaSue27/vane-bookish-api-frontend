@@ -5,7 +5,7 @@ export const AuthorBooks = ({ books }) => {
   return (
     <section>
       {books.map((book) => (
-        <Link to={`/books/${book.bookID}`}>
+        <Link to={`/books/${book.bookID}`} key={book.bookID}>
           <div>
             <p>{book.title}</p>
             <p>{book.authors}</p>

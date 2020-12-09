@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   height: 100%;
+  background-color: #f3f0ef;
 }
 
 /* Navigation Bar styling */
@@ -11,6 +12,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: white;
 }
 
 .bookish-text {
@@ -68,10 +70,6 @@ nav a:hover, .active {
 }
 
 /* Books List styling */
-main {
-  background-color: #f3f0ef;
-}
-
 .books-list {
   display: flex;
   flex-direction: row;

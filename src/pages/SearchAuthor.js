@@ -6,21 +6,18 @@ import { SorryNotFound } from '../components/SorryNotFound';
 export const SearchAuthor = () => {
   const [author, setAuthor] = useState('');
   const [books, setBooks] = useState([]);
-  const [consoleError, setConsoleError] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`https://vane-bookish-api.herokuapp.com/books/${author}`)
+    fetch(`https://vane-bookish-api.herokuapp.com/books/search?author=${author}`)
       .then((response) => response.json())
       .then((json) => {
-        setConsoleError(false);
         setBooks(json);
         setAuthor('');
       })
-      .catch((error) => {
-        console.log(error)
-        setConsoleError(true);
+      .catch(() => {
+        console.error();
         setAuthor('');
       })
   };
@@ -39,8 +36,11 @@ export const SearchAuthor = () => {
         </label>
         <button type="submit" onClick={handleSubmit}>SEARCH</button>
       </form>
-
-      {consoleError ? <SorryNotFound /> : <AuthorBooks books={books} />}
+      {/* When no books are found, the books state is set to the string we get as an error
+      message in the console ("Sorry no books were found..."), when books are found, books
+      becomes an array of results. Using this info to generate the NotFound page or the
+      AuthorBooks Page */}
+      {typeof books === 'string' ? <SorryNotFound /> : <AuthorBooks books={books} />}
     </>
   );
 };
