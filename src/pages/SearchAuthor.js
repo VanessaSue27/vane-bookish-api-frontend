@@ -24,18 +24,20 @@ export const SearchAuthor = () => {
 
   return (
     <>
-      <h1>Search by author Page</h1>
-      <form>
-        <label htmlFor="authorName">
-          Search by Author:
-          <input
-            id="authorName"
-            type="text"
-            value={author}
-            onChange={(event) => setAuthor(event.target.value)} />
-        </label>
-        <button type="submit" onClick={handleSubmit}>SEARCH</button>
-      </form>
+      <div className="subtitles-container">
+        <h1 className="books-subtitle">Search by Author</h1>
+        <form>
+          <label htmlFor="authorName">
+            Search by your favorite author:
+            <input
+              id="authorName"
+              type="text"
+              value={author}
+              onChange={(event) => setAuthor(event.target.value)} />
+          </label>
+          <button className="search-button" type="submit" onClick={handleSubmit}>SEARCH</button>
+        </form>
+      </div>
       {/* When no books are found, the books state is set to the string we get as an error
       message in the console ("Sorry no books were found..."), when books are found, books
       becomes an array of results. Using this info to generate the NotFound page or the

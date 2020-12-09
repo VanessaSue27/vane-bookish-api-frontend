@@ -5,7 +5,7 @@ export const ReviewersChoice = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch('https://vane-bookish-api.herokuapp.com/books?reviewersChoice=true')
+    fetch('https://vane-bookish-api.herokuapp.com/books/reviews?choice=true')
       .then((response) => response.json())
       .then((json) => {
         setBooks(json)

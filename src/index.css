@@ -172,7 +172,7 @@ button:disabled {
   padding: 10px;
 }
 
-.single-book-section a:hover {
+.single-book-section a:hover, .search-button:hover {
   color: #e8e3e2;
 }
 
@@ -208,6 +208,37 @@ button:disabled {
 .book-data-text p {
   color: #76323f;
   font-size: 15px;
+}
+
+/* Search by Author styling*/
+form {
+  margin-bottom: 40px;
+}
+
+label {
+  font-size: 20px;
+  color: #939191;
+  margin-right: 10px;
+}
+
+input {
+  margin-left: 10px;
+  background-color: #e8e3e2;
+  border-style: none;
+  border-top: 1px solid #939191;
+  border-left: 1px solid #939191;
+  height: 30px;
+  width: 400px;
+}
+
+.search-button {
+  background-color: #76323f;
+  color: white;
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  padding: 7px 14px;
+  cursor: pointer;
 }
 
 /*Media Queries*/
