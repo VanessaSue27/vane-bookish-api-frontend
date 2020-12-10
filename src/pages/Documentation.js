@@ -72,6 +72,14 @@ export const Documentation = () => {
 
       <h3 className="base-url">GET /books/book/:bookID</h3>
       <p className="base-url-link">Shows a single book, based on the bookID</p>
+
+      <p className="credits">
+        A React App Built by Vanessa Sue Smith for the Technigo Coding
+        Bootcamp. Frontend and Backend API by me 🤓
+        <a href="https://github.com/VanessaSue27" target="_blank" rel="noopener noreferrer"> GitHub</a> | <a href="https://vanessa-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio </a>
+        | <a href="https://www.linkedin.com/in/vanessa-sue-smith/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="https://twitter.com/vanevalentine" target="_blank" rel="noopener noreferrer"> Twitter</a>
+      </p>
     </section>
   );
 };

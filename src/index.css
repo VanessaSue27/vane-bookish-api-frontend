@@ -282,6 +282,11 @@ input {
   margin-top: 0;
 }
 
+.credits {
+  text-align: center;
+  margin: 30px 0;
+}
+
 /*Media Queries*/
 @media (max-width: 1299px) {
   .nav-links {
