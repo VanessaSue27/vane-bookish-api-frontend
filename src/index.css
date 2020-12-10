@@ -241,6 +241,47 @@ input {
   cursor: pointer;
 }
 
+/*Documentation styling*/
+.documentation-section {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.documentation-section a {
+  text-decoration: none;
+  color: #76323f;
+  font-weight: bold;
+}
+
+.documentation-section h1 {
+  font-family: 'PT Serif', serif;
+  color: #76323f;
+  font-size: 30px;
+}
+
+.example-pagination {
+  background-color: #76323f;
+  color: white;
+  width: 465px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.base-url {
+  background-color: #76323f;
+  color: white;
+  width: 500px;
+  padding: 10px;
+  margin: 0;
+}
+
+.base-url-link {
+  background-color: white;
+  width: 500px;
+  padding: 10px;
+  margin-top: 0;
+}
+
 /*Media Queries*/
 @media (max-width: 1299px) {
   .nav-links {
