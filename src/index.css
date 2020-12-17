@@ -360,4 +360,40 @@ input {
     margin: auto;
     margin-bottom: 20px;
   }
+
+  .book-data-container {
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .book-image {
+    width: 100%;
+  }
+
+  .book-data-text {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .documentation-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .book-data-container {
+    width: 80%;
+  }
+
+  .book-image {
+    width: 100%;
+  }
+
+  .book-data-text {
+    width: 90%;
+    padding: 20px;
+  }
 }
