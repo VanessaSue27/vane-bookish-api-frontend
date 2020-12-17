@@ -44,7 +44,7 @@ export const Documentation = () => {
         maximum of 10 pages.
       </p>
 
-      <h3>The Books Object:</h3>
+      <h3 className="books-object-text">The Books Object:</h3>
       <img src={bookObject} alt="JSON object" />
 
       <h3 className="base-url">GET /books/search?author=:authorName</h3>

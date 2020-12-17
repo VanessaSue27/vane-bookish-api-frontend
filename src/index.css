@@ -304,3 +304,60 @@ input {
     justify-content: flex-start;
   }
 }
+
+/*Mobile*/
+@media (max-width: 767px) {
+  .bookish-text {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-top: 35px;
+  }
+
+  .intro-text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .quote {
+    font-size: 30px;
+    width: 80%;
+    margin-top: 35px;
+  }
+
+  .book-card {
+    width: 80%;
+  }
+
+  .documentation-section {
+    margin: 0;
+    width: 100%;
+  }
+
+  .documentation-section h1 {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .documentation-section p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .documentation-section h2, .books-object-text {
+    margin-left: 35px;
+  }
+
+  .example-pagination, .base-url, .base-url-link {
+    width: 80%;
+    margin: auto;
+  }
+
+  .documentation-section img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}

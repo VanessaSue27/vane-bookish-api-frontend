@@ -11,7 +11,6 @@ export const BooksList = () => {
     fetch(`https://vane-bookish-api.herokuapp.com/books?p=${pageNumber}`)
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
         setBooks(json.books);
       })
   }, [pageNumber]);
