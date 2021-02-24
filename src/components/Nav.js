@@ -32,3 +32,5 @@ export const Nav = () => {
     </nav>
   );
 };
+
+// Fix navigation bar to be responsive
