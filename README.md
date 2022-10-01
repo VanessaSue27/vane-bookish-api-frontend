@@ -16,5 +16,3 @@ After the API part was done, I decided to freshen up my React Router skills and 
 You can view my app live here: https://vane-bookish-app.netlify.app/
 
 Repo for the Backend API: https://github.com/VanessaSue27/project-express-api
-
-API is live in Heroku here: https://vane-bookish-api.herokuapp.com/
